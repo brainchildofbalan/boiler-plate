@@ -24,7 +24,7 @@
             <div class="menu-links">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="/" class=" btn w-100 text-start">Home</a>
+                        <a href="/" class=" btn w-100 text-start">Primary</a>
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a href="./component-kit.php#color-section" class="btn w-100 text-start">Colors</a>
@@ -56,7 +56,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class=" btn w-100 text-start">Types</a>
+                        <a href="/" class=" btn w-100 text-start">Type Faces</a>
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a href="/" class="btn w-100 text-start">Paragraphs</a>
@@ -67,7 +67,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class=" btn w-100 text-start">Spacing</a>
+                        <a href="/" class=" btn w-100 text-start">Spaces & Gaps</a>
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a href="/" class="btn w-100 text-start">Margin</a>
