@@ -114,49 +114,67 @@
 }
 
 body.style-kit {
+  background-color: #E6E9EC;
   font-size: 15px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
 }
 body.style-kit header {
-  width: 16.875rem;
+  width: 18.75rem;
   display: flex;
   flex-direction: column;
   position: sticky;
   top: 0;
-  background-color: #fff;
   height: 100vh;
-  overflow: auto;
+  overflow: hidden;
+  padding: 0.625rem;
+}
+body.style-kit header .header_wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #FFFFFF;
+  border-radius: 0.9375rem;
+  min-height: 100%;
+  max-height: 100%;
+  padding: 0.9375rem 0.625rem;
+}
+body.style-kit .menu-links > .navbar-nav > .nav-item {
+  margin-top: 1.125rem;
+}
+body.style-kit .menu-links > .navbar-nav > .nav-item:first-child {
+  margin-top: 0;
 }
 body.style-kit .menu-links > .navbar-nav > .nav-item > a {
-  color: #939393;
+  color: #717780;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.05rem;
 }
-body.style-kit .navbar-nav .navbar-nav {
-  background-color: #fafafa;
-  padding: 15px;
-}
-body.style-kit .navbar-nav .navbar-nav a {
-  transition: 300ms transform ease-in;
-  will-change: transform;
+body.style-kit .menu-links > .navbar-nav > .nav-item .navbar-nav a {
+  padding-left: 2.8125rem;
+  line-height: 1.5;
+  color: #393E46;
   position: relative;
-  font-size: 14px;
+  font-weight: 500;
 }
-body.style-kit .navbar-nav .navbar-nav a::after {
+body.style-kit .menu-links > .navbar-nav > .nav-item .navbar-nav a::after {
   content: "";
-  width: 5px;
-  height: 2px;
-  background-color: #000;
   position: absolute;
-  left: 0;
+  left: 20px;
   top: 0;
   bottom: 0;
   margin: auto;
-  opacity: 0.2;
-}
-body.style-kit .navbar-nav .navbar-nav a:hover {
-  transform: translateX(10px);
-  transition: 300ms transform ease-out;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #979CA5;
+  border-radius: 50%;
+  opacity: 0.25;
 }
 body.style-kit main {
   width: 100%;
@@ -164,6 +182,7 @@ body.style-kit main {
   flex-direction: column;
   flex: 1;
   padding: 20px;
+  opacity: 0;
 }
 body.style-kit main .introduction {
   width: 100%;
